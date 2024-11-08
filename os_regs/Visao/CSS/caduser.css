@@ -1,0 +1,154 @@
+body {
+    background-color: hsl(0, 0%, 10%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(0, 0%, 90%);
+}
+
+a {
+    color: rgb(42, 156, 248);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    padding: 1em;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.nav-list li {
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 500px;
+}
+
+.card-form {
+    background-color: hsl(0, 0%, 15%);
+    width: 100%;
+    max-width: 400px;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    padding: 20px 30px;
+    border-radius: 20px 20px 0 0;
+    background-color: hsl(0, 0%, 12%);
+}
+
+.text-header {
+    color: rgb(43, 160, 255);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.subtext-header {
+    font-weight: 500;
+    color: hsl(0, 0%, 70%);
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.card-formulario {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.formulario-cadastro {
+    padding-top: 30px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border: 1px solid hsl(0, 0%, 30%);
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 90%);
+}
+
+label {
+    color: rgb(197, 248, 42);
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.cad-se {
+    font-size: 1em;
+    width: 100%;
+    background-color: hsl(113, 16%, 32%);
+    border: none;
+    color: #fff;
+    padding: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cad-se:hover {
+    background-color: hsl(113, 16%, 42%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 1em;
+        padding: 0.5em 0;
+    }
+
+    .container {
+        padding: 1em;
+    }
+
+    .card-form {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .text-header {
+        font-size: 1.2em;
+    }
+
+    .cad-se {
+        padding: 0.7em;
+    }
+}

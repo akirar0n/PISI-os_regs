@@ -1,0 +1,132 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(0, 0%, 90%); 
+}
+
+a {
+    color: hsl(75, 94%, 57%);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    padding: 1em;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    font-size: 1rem;
+}
+
+.nav-item-left {
+    margin-right: auto;
+}
+
+.nav-item-right {
+    margin-left: 20px; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: rgb(31, 31, 31);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-form {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-floating {
+    color: hsl(75, 94%, 57%);
+    padding: 3px;
+    margin-bottom: 1em;
+}
+
+.form-funcionario {
+    margin-top: 25px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 30%);
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 90%);
+}
+
+.btn-entrar-um, .btn-entrar-dois {
+    font-size: 1em;
+    width: 100%;
+    max-width: 100px;
+    background-color: hsl(75, 94%, 57%);
+    border: none;
+    color: #000000;
+    padding: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-entrar-um:hover, .btn-entrar-dois:hover {
+    background-color: hsl(75, 94%, 67%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .text-form {
+        font-size: 1.2em;
+    }
+}
